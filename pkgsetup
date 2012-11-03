@@ -82,7 +82,7 @@ To include man pages of packages you may need set the MANPATH environment
 variable or change the man(1) configuration file, by adding the following
 path:
 
-   $BINS/pkg/man
+   $BINS/usr/pkg/man
    
 You may also want to add the following to your ~/.profile:
 
