@@ -98,9 +98,12 @@ show(void) {
 		printf("\n%2d", x);
 		for(y = 0; y < 8; ++y) {
 			if(board[x][y] == -1)
-				printf("%3c♞", ' ');
+				printf("%2cS♞", ' ');
 			else if(board[x][y])
-				printf("%4.2d", board[x][y]);
+				if(x == y && x == 7)
+					printf("%2cE♞", ' ');
+				else
+					printf("%4.2d", board[x][y]);
 			else
 				printf("%4c", '.');
 		}
