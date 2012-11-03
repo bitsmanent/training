@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2006
- * 	Claudio M. All rights reserved.
+ * The Hermit Worm - Commodore64 snake-like game.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -25,14 +24,6 @@
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
- *
- *
- * TODO
- *    o fix: eat the numbers with the body too
- *    o fix: eat the numbers from any digit
- *    o fix: the numbers with 2 digits are out of borders
- *    o Create the '?' key which show the help and the commands
- *    o Ehm.. ehm.. Add the colors :-) Any volunteer? 
 */ 
 
 #include <stdio.h>
@@ -62,9 +53,7 @@ typedef struct list_t {
 /* Routes */
 enum { R_UP = 1, R_LEFT, R_DOWN, R_RIGHT } route;
 
-/*
- * Prototypes
-*/
+/* function declarations */
 void newnode(List **listp, int y, int x);
 void wormshow(List *worm, char ch, char chhead);
 void moveworm(List **worm, int way);
@@ -73,9 +62,9 @@ int isbite(List *worm);
 int iseat(List *worm, int row, int col);
 void killworm(List **worm);
 
-/* The main function */
-int main(int argc, char **argv)
-{
+/* function implementations */
+int
+main(int argc, char **argv) {
    int ch = 0, n, eating, trick = 0;
    int erow, ecol; /* eat position */
    int level, tricks, moves, score;

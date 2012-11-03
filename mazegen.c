@@ -1,7 +1,7 @@
 /*
  * Maze generator - Implements the Deep-First Search algorithm
  *
- * Copyright (C) 2007-2010 Claudio M. Alessi
+ * Copyright (C) 2007-2012 Claudio Alessi
  * All rights are reserved.
  *
  * This program is free software; you can redistribute it and/or
