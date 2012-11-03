@@ -2,7 +2,7 @@
 #
 # This scripts aim to simplify the installing and bootstrapping of the pkgsrc
 # framework on non-NetBSD systems. It also get the pkgsrc-wip directory and
-# allow to keep all update.
+# allow to keep all update. Feel free to contribute.
 #
 # TODO
 #
