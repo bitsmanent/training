@@ -1,19 +1,7 @@
-/*
- * Maze generator - Implements the Deep-First Search algorithm
+/* See LICENSE file for copyright and license details.
  *
- * Copyright (C) 2007-2012 Claudio Alessi
- * All rights are reserved.
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
-*/
+ * Maze generator - Implements the Deep-First Search algorithm.
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -58,12 +46,8 @@ main(int argc, char *argv[]) {
 	rows = ROWS;
 	cols = COLS;
 
-	while((c = getopt(argc, argv, "c:r:hv")) != -1) {
+	while((c = getopt(argc, argv, "c:r:h")) != -1) {
 		switch(c) {
-			case 'v':
-				printf("© 2007-2010 Claudio M. Alessi\n");
-				return 0;
-				break;
 			case 'c':
 				cols = atoi(optarg);
 				break;
