@@ -1,0 +1,22 @@
+/* Esercizio 5.4 */
+
+a) float hypotenuse(float side1, float side2)
+b) int smallest(int x, int y, int x)
+c) void instructions(void)
+d) float intToFloat(int number)
+
+/* Esercizio 5.5 */
+
+a) float hypotenuse(float, float);
+b) int smallest(int, int, int);
+c) void instructions(void);
+d) float intToFloat(int);
+
+/* Esercizio 5.6 */
+
+a) register int count = 0;
+b) static float lastVal;
+c) extern int number; /* errato */
+c) static int number; /* all'esterno di ogni dichiarazione di funzione. */
+                      /* corretto */
+

@@ -1,0 +1,37 @@
+/* Exercise 10.6 */
+
+struct customer {
+   char lastName[15];
+   char firstName[15];
+   int customerNumber;
+
+   struct {
+      char phoneNumber[11];
+      char address[50];
+      char city[15];
+      char state[3];
+      char zipCode[6];
+   } personal;
+
+} custmerRecord, *customerPtr;
+
+customerPtr = &customerRecord;
+
+
+a) customerRecord.lastName;
+b) customerPtr->lastName;
+c) customerRecor.firstName;
+d) customerPtr->firstName;
+e) customerRecor.customerNumber;
+f) customerPtr->customerNumber;
+g) customerRecord.personal.phoneNumber;
+h) customerPtr->personal.phoneNumber;
+i) customerRecord.personal.address;
+j) customerPtr->personal.address;
+k) customerRecord.personal.city;
+l) customerPtr->personal.city;
+m) customerRecord.personal.state;
+n) customerPtr->personal.state;
+o) customerRecord.personal.zipCode;
+p) customerPtr->personal.zipCode;
+

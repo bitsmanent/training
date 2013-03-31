@@ -1,0 +1,30 @@
+/* Exercise 6.8 */
+ 
+a) printf("%c\n", f[6]);
+
+b) 
+   printf("Give me a value: ");
+   scanf("%lf", &b[4]);
+
+c)
+   for(i = 0; i < 5; i++)
+      g[i] = 8;
+
+d)
+   double tot;
+   for(i = 0; i < 100; i++)
+      tot += c[i];
+
+e)
+   for(i = 0; i < 11; i++) 
+      b[i] = a[i];
+
+f)
+   int l, s; /* large and small */
+   for(i = 0; i < 99; i++) {
+      if(w[i] > large)
+	 large = w[i];
+      else if(w[i] < small)
+	 small = w[i];
+   }
+

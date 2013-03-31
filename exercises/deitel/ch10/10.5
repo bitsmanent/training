@@ -1,0 +1,55 @@
+/* Exercise 10.5 */
+
+a)
+   struct inventory {
+      char partName[30];
+      int partNumber
+      int stock
+      int reorder;
+      double price;
+   };
+
+b)
+   union data {
+      char c;
+      short s;
+      long b;
+      float f;
+      double d;
+   };
+
+c)
+   struct address {
+      char streetAddress[25];
+      char city[20];
+      char state[3];
+      char zipCode[6];
+   };
+
+d)
+   struct student {
+      char firstName[15];
+      char lastName[15];
+      struct address homeAddress;
+   };
+
+e)
+   struct test {
+      int a: 1;
+      int b: 1;
+      int c: 1;
+      int d: 1;
+      int e: 1;
+      int f: 1;
+      int g: 1;
+      int h: 1;
+      int i: 1;
+      int j: 1;
+      int k: 1;
+      int l: 1;
+      int m: 1;
+      int n: 1;
+      int o: 1;
+      int p: 1;
+   };
+

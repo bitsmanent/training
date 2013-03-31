@@ -1,0 +1,31 @@
+/* Exercise 10.3 */
+
+a)
+   struct part {
+      int partNumber;
+      char partName[25];
+   };
+
+b)
+   typedef struct part Part;
+
+c)
+   Part a, b[10], *ptr;
+
+d)
+   printf("Number of part: ");
+   scanf("%d", &a.partNumber);
+
+   printf("Name of part: ");
+   scanf("%s", &a.partName);
+
+e)
+   b[3] = a;
+
+f)
+   ptr = b;
+
+g)
+   printf("P.No: %d\n", ptr[3]->partNumber);
+   printf("P.Na: %s\n", ptr[3]->partName);
+

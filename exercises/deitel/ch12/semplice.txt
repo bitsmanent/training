@@ -1,0 +1,87 @@
+/* Exercise 12.26 */
+
+--- a)
+10 rem Prendo in input 3 numeri
+11 input a
+12 input b
+13 input c
+20 rem Determino la media
+21 let s = (a + b + c) / 3
+30 rem Stampo il risultato
+31 print s
+
+--- b)
+10 rem Prendo in input n interi fino al valore sentinella
+11 input n
+12 if n == -9999 goto 31
+20 rem Aggiungo n a s (s += n)
+21 let s = s + n
+22 goto 11
+30 rem Stampo il risultato e termino l'esecuzione
+31 print s
+32 end
+
+--- c)
+10 rem Prendo in input 7 interi
+11 let i = 7
+12 if i < 0 goto 21
+13 input n
+14 let s = s + n 
+15 let i = i - 1
+16 goto 12
+20 rem Calcolo la media
+21 let m = s / 7
+22 print m
+23 end
+
+--- d)
+10 rem Prendo il primo intero
+11 input i
+12 let n = i
+13 if i == 0 goto 27
+20 rem Prendo in input i numeri
+21 input n
+22 if i > n goto 24
+23 let n = i
+24 let i = i - 1
+25 goto 13
+26 rem Stampo il maggiore ed esco
+27 print n
+28 end
+
+--- e)
+10 rem Prendo in input 10 interi
+11 let i = 10
+13 input x
+13 if i == 0 goto 20
+14 input y
+15 if y > x goto 17 
+16 let x = y
+17 let i = i - 1
+18 goto 13
+19 rem Stampo il minore ed esco
+20 print x
+21 end
+
+--- f)
+10 rem Ciclo gli interi pari tra 2 e 20 (inclusi)
+11 let i = 2
+12 let n = n + i 
+20 if i == 30 goto 31
+21 let i = i + 2
+22 goto 12
+30 rem Stampo la somma ed esco
+31 print n
+32 end
+
+--- g)
+10 rem Ciclo gli interi dispari tra 1 e 9 (inclusi)
+11 let i = 1
+12 let n = n * i
+20 if i == 9 goto 31
+21 let i = i + 2
+22 goto 12
+30 rem Stampo il prodotto ed esco
+31 print n
+32 end
+
